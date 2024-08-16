@@ -140,6 +140,7 @@ header{
     align-items: center;
     text-decoration: none;
     margin-right: 10px;
+    position: relative;
 }
 .header__circle-link .fa-sort-down{
     position: relative;
@@ -148,4 +149,20 @@ header{
 }
 .header__link-icon{
     font-size: .9rem;
+}
+.header__notification-rightbubble{
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--fb-red);
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: .8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-weight: 700;
 }
