@@ -1,9 +1,11 @@
 *{
     box-sizing: border-box;
 }
+
 *:focus{
     outline: none;
 }
+
 :root{
     --fb-blue: #0a86f0;
     --fb-black: #090909;
@@ -36,11 +38,13 @@
         --icon-circle-bg: #6fcf97;
     }
 }
+
 body{
     background: var(--fb-bgcolor);
     font-family: Arial, Helvetica, sans-serif;
     color: var(--fb-black);
 }
+
 header{
     background: var(--fb-whitebg);
     height: 62px;
@@ -81,6 +85,13 @@ header{
     padding-left: 35px;
     font-weight: 300;
     border: none;
+    margin-right: 20px;
+}
+.header__mobile-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
 }
 .header__menu-tabs{
     display: flex;
@@ -184,10 +195,12 @@ header{
     right: -5px;
     font-weight: 700;
 }
+
 .content-area--feed{
     padding: 90px 15px 20px;
     display: flex;
 }
+
 .sidenav{
     width: 25%;
 }
@@ -238,7 +251,6 @@ header{
     border-radius: 50%;
     font-size: .9rem; 
 }
-
 .sidenav__item-icon--circle-white{
     background: var(--icon-circle-bg);
     border-radius: 50%;
@@ -267,6 +279,7 @@ header{
     font-size: 1.1rem;
     margin-bottom: 15px;
 }
+
 .feed{
     width: 50%;
     height: 200px;
@@ -274,6 +287,7 @@ header{
     align-items: center;
     flex-direction: column;
 }
+
 .stories{
     display: flex;
     max-width: 700px;
@@ -343,6 +357,7 @@ header{
     top: -113px;
     left: 10px;
 }
+
 .feed__box{
     padding: 20px;
     background: var(--fb-whitebg);
@@ -358,14 +373,12 @@ header{
     display: flex;
     margin-bottom: 10px;
 }
-
 .newpost__user-img{
     width: 50px;
     height: 50px;
     border-radius: 50%;
     margin-right: 10px;
 }
-
 .newpost input[type="text"]{
     background: var(--fb-bgcolor);
     padding: 10px;
@@ -377,12 +390,14 @@ header{
     font-weight: 300;
     width: 100%;
 }
+
 .hline{
     height: 1px;
     background: var(--button-link);
     margin-bottom: 15px;
     display: block;
 }
+
 .post-types{
     display: flex;
     justify-content: space-between; 
@@ -407,11 +422,11 @@ header{
 .post-types__item .fa-laugh-beam{
     color: var(--fb-yellow);
 }
+
 .photopost{
     padding: 0 0 20px;
     margin-bottom: 20px;
 }
-
 .photopost__info{
     width: 100%;
     display: flex;
@@ -454,7 +469,6 @@ header{
 .photopost__image img{
     width: 100%;
 }
-
 .photopost__stats{
     height: 50px;
     display: flex;
@@ -470,6 +484,7 @@ header{
     justify-content: center;
     align-items: center;
 }
+
 .emoji-circle{
     display: flex;
     width: 22px;
@@ -514,6 +529,7 @@ header{
     position: relative;
     top: -1px;
 }
+
 .photopost__actions{
     display: flex;
     justify-content: center;
@@ -538,7 +554,6 @@ header{
     bottom: 0;
     right: 20px;
 }
-
 .floatingmsg__bubble{
     width: 50px;
     height: 50px;
@@ -577,3 +592,36 @@ header{
     font-weight: 700;
     z-index: 3;
 }
+
+@media only screen and (max-width: 1300px){
+    .header__menu-tabs{
+        display: none;
+    }
+    /* .header__logo-search input[type="text"]{
+        width: 15px;
+    } */
+}
+@media only screen and (max-width: 1000px){
+
+}
+@media only screen and (max-width: 768px){
+    .header__user-img{
+        display: none;
+    }
+    .header__user-name{
+        display: none;
+    }
+    .header__logo-search .fa-search{
+        left: 12px;
+        top: 14px;
+    }
+     .header__logo-search input[type="text"]{
+        width: 40px;
+        height: 40px;
+        padding: 0;
+    }
+}
+@media only screen and (max-width: 320px){
+    
+}
+
